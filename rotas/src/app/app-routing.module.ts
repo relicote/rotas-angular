@@ -9,6 +9,7 @@ const routes: Routes = [
   {path:'portfolio', component: CardComponent, children: [
     //criando path filho - portfolio/1
     {path:':id', component: CardComponent},
+    {path:':id/:token', component: CardComponent}
   ]},
   {path:'**', redirectTo:''}
 ];

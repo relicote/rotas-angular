@@ -17,8 +17,8 @@ export class CardComponent implements OnInit {
       res => console.log(res)
     )
 
-    // recuperando parametros
-    this.parametrizador.queryParams.subscribe(
+    // recuperando parametros SE ele existir
+    this.parametrizador.firstChild?.queryParams.subscribe(
       res => console.log(res)
     )
    }
