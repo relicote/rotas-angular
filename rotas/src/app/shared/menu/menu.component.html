@@ -1,11 +1,11 @@
 <div>
   <ul>
     <li>
-      <a [routerLink]="['/']">HOME</a>
+      <a [routerLink]="['/']" [routerLinkActive]="['activated']" [routerLinkActiveOptions]="{exact: true}">HOME</a>
       <br>
     </li>
     <li>
-      <a [routerLink]="['/portfolio']">PORTFOLIO</a>
+      <a [routerLink]="['/portfolio']" [routerLinkActive]="['activated']" [routerLinkActiveOptions]="{exact: true}">PORTFOLIO</a>
       <br>
     </li>
   </ul>
